@@ -2,14 +2,16 @@
   <div id="app">
     <navbar></navbar>
     <router-view/>
+    <foot></foot>
   </div>
 </template>
 
 <script>
 import navbar from './components/nav'
+import foot from './components/foot'
 export default {
   name: 'App',
-  components:{navbar}
+  components:{navbar, foot}
 }
 </script>
 
@@ -20,7 +22,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+
 
 }
 </style>
